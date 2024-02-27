@@ -1,0 +1,41 @@
+/* 
+nav {
+    background-color: #d64430;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+ul#menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#menu-list li {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    ul#menu-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul#menu-list li {
+        margin: 10px 0;
+    }
+
+    ul#menu-list.collapsed {
+        display: none;
+    }
+}
+
+.menu-icon{
+    color: black;
+}
+ */

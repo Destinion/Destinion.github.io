@@ -1,0 +1,28 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Menu section styles */
+#menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vyber {
+    text-align: center;
+    margin: 20px 0;
+}
+

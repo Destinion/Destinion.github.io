@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangiare - Che bontà!</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <!-- <link rel="stylesheet" href="css/rwd.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <nav>
+        <ul class="collapsed" id="menu-list">
+            <li class="menu-icon" onclick="toggleMenu()">&#9776;</li>
+            <li class="logo"><a href="#home"><img src="logo/new.png" alt="logo"></a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Rezervace</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#review">Recenze</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <h1 id="home">Mangiare</h1>
+            <span>Italská kuchyně v centru Prahy</span>
+        </div>
+    </header>
+    <main>
+        <h1 id="menu">Nabídka</h1>
+        <!-- Menu - Show by btn-->
+        <div class="vyber">
+            <button onclick="showCategory('all')">Vše</button>
+            <button onclick="showCategory('aperitiv')">Aperitivy</button>
+            <button onclick="showCategory('main_course')">Hlavní jídla</button>
+            <button onclick="showCategory('desserts')">Dezerty</button>
+            <button onclick="showCategory('nonalcoholic_drinks')">Nápoje</button>
+            <button onclick="showCategory('alcoholic_drinks')">Drinky</button>
+        </div>
+        <div class="menu">
+            <div id="aperitiv" class="category"></div>
+            <div id="main_course" class="category"></div>
+            <div id="desserts" class="category"></div>
+            <div id="nonalcoholic_drinks" class="category"></div>
+            <div id="alcoholic_drinks" class="category"></div>
+        </div>
+
+        <h1 id="reservation">Rezervace</h1>
+        <div class="reservation">
+            <form action="data/reservation.php" method="post">
+                <label for="name">Jméno:</label><br/>
+                <input type="text" id="name" name="name" required><br/>
+                <label for="email">Email:</label><br/>
+                <input type="email" id="email" name="email" required><br/>
+                <label for="phone">Telefon:</label><br/>
+                <input type="tel" id="phone" name="phone" required><br/>
+                <label for="date">Datum:</label><br/>
+                <input type="date" id="date" name="date" required><br/>
+                <label for="time">Čas:</label><br/>
+                <input type="time" id="time" name="time" required><br/>
+                <label for="people">Počet osob:</label><br/>
+                <input type="number" id="people" name="people" required><br/>
+                <input type="submit" value="Odeslat">
+            </form>
+        </div>
+
+        <h1 id="about">O nás</h1>
+        <div class="about">
+            <p>
+                Restaurace Mangiare se nachází v centru Prahy. Nabízíme italskou kuchyni, která je známá po celém světě. 
+                Naše jídla jsou připravována z čerstvých surovin a s láskou k vaření. 
+                V naší nabídce najdete jak tradiční italská jídla, tak i moderní pokrmy. 
+                V naší restauraci se můžete těšit na příjemné prostředí a vstřícný personál. 
+                Těšíme se na vaši návštěvu!
+            </p>
+            <div class="about_pics">
+                <img src="obrazky/restaurant.jpg" alt="Restaurant"/>
+                <img src="obrazky/italian-flag.webp" alt="Italská vlajka"/><br/>
+                <img src="obrazky/interior.png" alt="Interiér">
+            </div>
+        </div>
+
+        <h1 id="contact">Kontakt</h1>
+        <div>
+            <div class="contact">
+                <p>
+                    Adresa: Vodičkova 20, 110 00 Praha 1<br/>
+                    Telefon: +420 123 456 789<br/>
+                    Email:
+                    <a href="mailto:ondrej.pacner@skolahostivar.cz">info@restaurace.cz</a><br/>
+                    Otevírací doba: Po-Pá 11:00-22:00,<br/> So-Ne 12:00-23:00
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.3943943943944!2d14.42007331570579!3d50.08839407942615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e3f3f3f3f3%3A0x3e3e3e3e3e3e3e3e!2sMangiare!5e0!3m2!1scs!2scz!4v1616743940733!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>  
+        </div>
+
+        
+
+        <h1 id="review">Napsali o nás</h1>
+        <div class="review">
+            <div class="review_item">
+                <img src="https://www.transparentnivolby.cz/hrad2023/wp-content/uploads/sites/13/2022/11/petr_pavel.jpg" alt="Recenze 1"/>
+                <p>
+                    "Výborná italská kuchyně, příjemné prostředí a vstřícný personál. 
+                    Určitě se sem budu vracet!"
+                </p>
+            </div>
+            <div class="review_item">
+                <img src="https://www.transparentnivolby.cz/hrad2023/wp-content/uploads/sites/13/2022/11/petr_pavel.jpg" alt="Recenze 2"/>
+                <p>
+                    "Jídlo bylo výborné, obsluha milá a ochotná. 
+                    Určitě doporučuji!"
+                </p>
+            </div>
+            <div class="review_item">
+                <img src="https://www.transparentnivolby.cz/hrad2023/wp-content/uploads/sites/13/2022/11/petr_pavel.jpg" alt="Recenze 3"/>
+                <p>
+                    "Výborná italská kuchyně, příjemné prostředí a vstřícný personál. 
+                    Určitě se sem budu vracet!"
+                </p>
+            </div>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq">
+            <div class="accordion-item">
+                <button class="accordion">Jaké máte otevírací doby?</button>
+                <div class="panel">
+                    <p>Otevírací doba je Po-Pá 11:00-22:00, So-Ne 12:00-23:00.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion">Můžu si u vás rezervovat stůl?</button>
+                <div class="panel">
+                    <p>Ano, rezervace je možná. Využijte prosím formulář výše.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion">Máte v nabídce i vegetariánská jídla?</button>
+                <div class="panel">
+                    <p>Ano, v naší nabídce najdete i vegetariánská jídla.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="lunchSpecial" class="special-offer">
+            <h2>Obědový speciál</h2>
+            <p>Dnešní speciální nabídka: <span id="specialItem">Pasta Carbonara - 239 Kč</span></p>
+            <p id="timer"></p>
+            <button id="closeBtn" class="close-btn">&times;</button>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Mangiare</p>
+    </footer>
+</body>
+</html>
+<script src="skripty/menu.js"></script>
+<script src="skripty/vyber.js"></script>
+<script src="skripty/navbar.js"></script>
+<script src="skripty/accordion.js"></script>
+<script src="skripty/special.js"></script>

@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: ArefRuqaa-Regular
+font link: https://fonts.google.com/specimen/Aref+Ruqaa
+font author: Abdullah Aref
+font author site: https://www.facebook.com/areffonts
+
+
+icon designer: Nook Fulloption
+icon designer link: /nookfulloption
+        
+{"bg":"#D64430","icon":"#E5914C","font":"#ffffff","slogan":"#ffffff"}
+      

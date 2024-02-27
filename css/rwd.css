@@ -1,0 +1,84 @@
+/* mobile.css */
+@media only screen and (max-width: 768px) {
+    body > *:not(header):not(nav) {
+        padding: 0 5%;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header span {
+        font-size: 1em;
+    }
+
+    .vyber {
+        flex-direction: column;
+    }
+
+    .vyber button {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: #f6d365;
+        padding: 20px;
+    }
+    .category{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .category div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        background-color: #e5914C;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .category div img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .category div h3,
+    .category div p {
+        text-align: center;
+    }
+
+    .category div p {
+        margin: 0;
+    }
+
+    .about_pics {
+        flex-direction: column;
+    }
+
+    .about_pics img {
+        margin-bottom: 20px;
+    }
+
+    .contact,
+    .reservation,
+    .review_item {
+        margin-bottom: 20px;
+    }
+    iframe{
+        width: 200px;
+    }
+}
+	
