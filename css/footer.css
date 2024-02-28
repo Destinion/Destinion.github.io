@@ -1,2 +1,21 @@
+/* footer.css */
+footer {
+    background-color: #d64430;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    height: 20vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+    margin-top: 10px;
+}
 
 

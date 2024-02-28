@@ -1,0 +1,23 @@
+/* about.css */
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about p {
+    margin-right: 20px;
+}
+
+.about_pics {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.about_pics img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}

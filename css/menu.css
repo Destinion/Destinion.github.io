@@ -26,3 +26,141 @@
     margin: 20px 0;
 }
 
+/* menu.css */
+main {
+    padding: 20px;
+    margin: 10px;
+}
+
+.vyber {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vyber button {
+    background-color: #e5914C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.vyber button:hover {
+    background-color: #d64430;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+div.vyber button {
+    border-radius: 5px;
+}
+.hidden {
+    display: none;
+}
+
+/* Menu section styles */
+#menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #f6d365;
+}
+
+.category div {
+    flex: 0 0 calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #e5914C;
+    border-radius: 8px;
+}
+.category div div.stuff{
+    border-style: none;
+    border-width: 0;
+    margin: 0;
+}
+
+.category div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .category div {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        background-color: #e5914C;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-height: 200px;
+    }
+
+    .category div img {
+        width: 40%;
+        max-width: 150px;
+        height: auto;
+        /* object-fit: cover; */
+        border-radius: 8px;
+        margin-right: 10px;
+        max-height: 180px;
+        object-fit: contain;
+    }
+
+    .category div .stuff {
+        width: 60%;
+        max-width: calc(100% - 160px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .category div h3 {
+        font-size: 1.2em; /* Adjusted font size for the heading */
+        margin: 0; /* Reduced margin for more compact spacing */
+    }
+
+    .category div p.popis {
+        display: none;
+    }
+    .category div p{
+        margin: 0;
+    }
+}
