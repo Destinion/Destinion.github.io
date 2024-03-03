@@ -9,7 +9,7 @@ $(document).ready(function () {
         // AJAX request
         $.ajax({
             type: 'POST',
-            url: 'data/reservation.php',
+            url: '../data/reservation.php',
             data: formData,
             success: function (response) {
                 console.log(response);
