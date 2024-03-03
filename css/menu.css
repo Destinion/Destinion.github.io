@@ -67,7 +67,7 @@ div.vyber button {
     border-radius: 5px;
 }
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Menu section styles */
